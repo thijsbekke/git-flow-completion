@@ -38,7 +38,6 @@ _git-flow ()
 				'feature:Manage your feature branches.'
 				'release:Manage your release branches.'
 				'hotfix:Manage your hotfix branches.'
-				'support:Manage your support branches.'
 				'version:Shows version information.'
 			)
 			_describe -t commands 'git flow' subcommands

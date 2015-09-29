@@ -1,7 +1,7 @@
 git-flow-completion
 ===================
 
-Bash, Zsh and fish completion support for [git-flow](http://github.com/nvie/gitflow).
+Bash, Zsh and fish completion support for [simple git-flow](https://github.com/thijsbekke/gitflow). Forked from the implementation created by [BobTheCow](https://github.com/bobthecow/git-flow-completion)
 
 The contained completion routines provide support for completing:
 
