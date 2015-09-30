@@ -89,7 +89,7 @@ __git_flow_init ()
 
 __git_flow_feature ()
 {
-	local subcommands="list start finish publish track diff rebase checkout pull help"
+	local subcommands="list start publish track diff rebase checkout pull help"
 	local subcommand="$(__git_find_on_cmdline "$subcommands")"
 	if [ -z "$subcommand" ]; then
 		__gitcomp "$subcommands"
@@ -158,10 +158,6 @@ __git_flow_hotfix ()
 	fi
 
 	case "$subcommand" in
-	finish)
-		__gitcomp "$(__git_flow_list_branches 'hotfix')"
-		return
-		;;
 	publish)
 		__gitcomp "$(comm -23 <(__git_flow_list_branches 'hotfix') <(__git_flow_list_remote_branches 'hotfix'))"
 		return
